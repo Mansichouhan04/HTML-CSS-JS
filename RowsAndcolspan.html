@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Create table using rowspan and colspan</title>
+    </head>
+    <body>
+        <table border="2">
+            <tr>
+                <th>column1</th>
+                <th>column1</th>
+                <th>column1</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 1 cell 1</td>
+                <td>Row 1 cell 2</td>
+                <td>Row 1 cell 3</td>
+                </tr>
+                <tr>
+                <td>Row 2 cell 2</td>
+                <td>Row 2 cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3"align=center>Row 3 Cell 1</td>
+            </tr>
+        </table>
+        
+        
+        <br>
+        <br>
+        <h1><b>Weather Station</b></h1>
+        <table border="2">
+            <tr>
+                <th rowspan="2">Station</th>
+                <th colspan="2">Temprature</th>
+                <th rowspan="2">Humidity</th>
+                <th rowspan="2">Weather</th>
+                <tr>
+                <th>Max</th>
+                <th>Min</th>
+            </tr>
+            <tr>
+                <td>
+                    USA
+                </td>
+                <td>
+                    24
+                </td>
+                <td>
+                    19
+                </td>
+                <td>
+                    60%
+                </td>
+                <td>
+                    cloudy
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Germany
+                </td>
+                <td>
+                    5
+                </td>
+                <td>
+                    -1
+                </td>
+                <td>
+                    70%
+                </td>
+                <td>
+                    Rainy
+                </td>
+            </tr>
+        </table>
+        
+        
+        <br>
+        <br>
+        <h1>Seminar Schedule</h1>
+        <table border = "2" cellpadding = "7" cellspacing = "0">
+        <caption>Seminar sehedule</caption>
+        <tr>
+        <th rowspan = "3" bgcolor = "Lavenderblush">Day</th>
+        <th colspan = "3" bgcolor = "Lavenderblush">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2" bgcolor = "Lavenderblush">Sehedule</th>
+            <th rowspan = "2" bgcolor = "Lavenderblush">Topic</th>
+        </tr>
+        <tr>
+            <th bgcolor = "#AFEEEE">Begin</th>
+            <th bgcolor = "#AFEEEE">End</th>
+        </tr>
+        <tr>
+            <td rowspan = "2">Monday</td>
+            <td rowspan = "2" bgcolor = "#FFDAB9">8:00 AM</td>
+            <td rowspan = "2" bgcolor = "Violet">5:00</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td>Validity DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan = "3">Tuesday</td>
+            <td bgcolor = "#FFDAB9">8:00 AM</td>
+            <td bgcolor = "#FFDAB9">11:00 AM</td>
+            <td rowspan = "1">XPath</td>
+        </tr>
+        <tr>
+            <td bgcolor = "#FFDAB9">11:00 AM</td>
+            <td bgcolor = "Lightgreen">2:00 AM</td>
+            <td rowspan = "2">XSL Transformation</td>
+        </tr>
+        <tr>
+            <td bgcolor = "Lightgreen">2:00 PM</td>
+            <td bgcolor = "Violet">5:00 PM</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td bgcolor = "#FFDAB9">8:00 AM</td>
+            <td bgcolor = "Lightgreen">12:00 PM</td>
+            <td>XSL formatting Objects</td>
+        </tr>
+
+        
+    </table>
+    </body>
+</html>
