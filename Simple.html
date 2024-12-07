@@ -1,9 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>India</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body bgcolor="cyan" text="Navy">
-<h1><b><i>Hello Mansi</i></b></h1>
-<h2>how do you do</h2>
+<body>
+    <script>
+        let s="this is an\"String\" ";//agar donble cotation me chaiye to aise hi likhege
+        let pr="The \'Sun\' rises in the east";//or single me ase bhi de skte h or niche jesa diya h wese bhi
+        let x="Good work-'Keep it up' ";
+        let e=document.createElement('p');
+        e.textContent=s
+       // e.textContent=s.concat(pr).concat(x);///concat method use
+       let p=document.getElementsByTagName('Body')[0];
+        p.appendChild(e);
+    </script>
 </body>
 </html>
