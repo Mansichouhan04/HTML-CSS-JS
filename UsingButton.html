@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Functions with buttons</title>
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        justify-self: center;
+        align-items: center;
+        min-height: 100vh;
+        margin:0;
+        background-color: #f0f2f5;
+    }
+
+    h2{
+        color:#4cAF50;
+        text-align: center;
+    }
+
+    label{
+        font-weight:bold;
+        color:#333;
+    }
+
+    input[type="text"]{
+        padding: 8px;
+        margin-top: 5px;
+        width: 100%;
+        max-width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+input[readonly] {
+    background-color: #e9ecef;
+    color: #333;
+    margin-top: 5px;
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+input[readonly]:focus {
+    outline: none;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+    
+</style>
+<body>
+
+    <h2>String Functions</h2>
+    <label for="string1">Enter first String:</label>
+    <input type="text" id="string1" placeholder="First string">
+
+    <br><br>
+
+    <label for="string2">Enter second String:</label>
+    <input type="text" id="string2" placeholder="Second string">
+
+    <br><br>
+    <button onclick="concatenateStrings()">Concatenate</button>
+    <input type = "text" id = "result" readonly>
+
+    <br><br>
+    <button onclick="lowercaseString()">LowerCase</button>
+    <input type = "text" id = "result1" readonly>
+
+    <br><br>
+    <button onclick="UpperCaseString()">UpparCase</button>
+    <input type = "text" id = "result2" readonly>
+
+    <br><br>
+    <button onclick="padStart()">padStart</button>
+    <input type="text" id="result3" readonly>
+
+    <script>
+
+        function concatenateStrings() {
+            let str1 = document.getElementById("string1").value;
+            let str2 = document.getElementById("string2").value;
+            document.getElementById("result").value = str1.concat(str2);
+        }
+
+        function lowercaseString() {
+            let concatenated = document.getElementById("result").value;
+            document.getElementById("result1").value = concatenated.toLowerCase();
+        }
+
+        function UpperCaseString(){
+            let lowerCase=document.getElementById("result1").value;
+            document.getElementById("result2").value= lowerCase.toUpperCase();
+        }
+
+        function padStart(){
+            let concatenated=document.getElementById("result").value;
+            document.getElementById("result3").value=concatenated.padStart(20,'*');
+        }
+    
+    </script>
+    
+</body>
+</html>
