@@ -1,0 +1,36 @@
+<!--Program to count alphabets, digits, and special characters-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count alphabets ,digits and special character</title>
+</head>
+<body>
+    <script>
+        const str=prompt("Enter a string:");
+        let alphabets=0;
+        let digits=0;
+        let specialcharacter=0;
+
+        for(let i=0;i<str.length;i++)
+    {
+        if((str[i]>='a'&& str[i]<='z')||(str[i]>='A'&& str[i]<='z'))
+    {
+        alphabets++;
+    }
+    else if((str[i]>='0'&& str[i]<='9'))
+    {
+        digits++;
+    }
+    else
+    {
+        specialcharacter++;
+    }
+    }
+    console.log("Alphabates is::"+alphabets);
+    console.log("digits is::"+digits);
+    console.log("Special Character is::"+specialcharacter);
+    </script>
+</body>
+</html>
