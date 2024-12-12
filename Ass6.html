@@ -1,0 +1,27 @@
+<!--#1. Write a program to convert string into lowercase without any library function.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert into lowercase without any libarary</title>
+</head>
+<body>
+    <script>
+        const str= prompt("Enter a String:");
+        let lowercasestr=" ";
+        
+        for(let i=0;i<str.length;i++)
+    {
+        if(str[i]>='A' && str[i]<='Z')
+    {
+        lowercasestr+=String.fromCharCode(str[i].charCodeAt(0)+32);
+    }
+    else{
+        lowercasestr+=str[i];
+    }
+    }
+    console.log("Lower Case String is::"+lowercasestr);
+    </script>
+</body>
+</html>
