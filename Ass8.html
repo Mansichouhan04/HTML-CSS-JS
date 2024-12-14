@@ -1,0 +1,31 @@
+<!--#3. Write a program to count total number of vowels and consonants in a string.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count vowels and constant</title>
+ </head>
+ <body>
+    <script>
+        const str=prompt("Enter a String:");
+        let vowels=0;
+        let consonants=0;
+        for(let i=0;i<str.length;i++)
+    {
+        if((str[i]>='a'&& str[i]<='z')||(str[i]>='A'&& str[i]<='z'))
+    {
+        if('aeiouAEIOU'.includes(str[i]))
+    {
+        vowels++;
+    }
+    else{
+        consonants++;
+    }
+    }
+    }
+    console.log("vowels is:"+vowels);
+    console.log("consonants is::"+consonants)
+    </script>
+</body>
+</html>
