@@ -1,0 +1,30 @@
+<!--#10.Write a program to toggle case of each character of a string.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle Case</title>
+</head>
+<body>
+    <script>
+        const str=prompt("Enter a string:");
+        let togglestr= "";
+        for(let i=0;i<str.length;i++)
+    {
+        if(str[i]>='a'&&str[i]<='z')
+    {
+        togglestr+=str[i].toUpperCase();
+    }
+    else if(str[i]>='A' && str[i]<='Z')
+    {
+        togglestr+=str[i].toLowerCase();
+    }
+    else{
+        togglestr+=str[i];
+    }
+}
+   console.log("Toggled String is::"+togglestr);
+   </script>
+</body>
+</html>
