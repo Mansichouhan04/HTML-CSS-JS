@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+</head>
+<body>
+    <script>
+        function binary() {
+            let s = 0, e, m, search, i, flag = 0;
+            let arr = [10, 15, 18, 32, 88, 93];
+            e = arr.length - 1;
+            search = parseInt(prompt("Enter number to search:"));
+
+            for(i=0;i<arr.length;i++)
+        {
+            m=parseInt((s+e)/2);
+            if(search==arr[m])
+        {
+            flag=1;
+            break;
+        }
+        else if(search>arr[m]){
+            s=m+1;
+        }
+        else{
+            e=m-1;
+        }
+        }
+
+            if (flag == 1) {
+                console.log("Number is present.");
+            } else {
+                console.log("Number is not present.");
+            }
+        }
+
+        binary();
+    </script>
+</body>
+</html>
