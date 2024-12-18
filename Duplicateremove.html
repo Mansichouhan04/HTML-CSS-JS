@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate Remove</title>
+</head>
+<body>
+    <script>
+        let arr=[1,23,2,23,2,12,34];
+        console.log("Original array is::"+arr)
+        let uniqueArr=[];
+        for(let i=0;i<arr.length;i++)
+    {
+        if(!uniqueArr.includes(arr[i]))
+    {
+        uniqueArr.push(arr[i]);
+    }
+    }
+    console.log("duplicate array is removed:"+uniqueArr);
+    </script>
+    
+</body>
+</html>
