@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merged array with logic</title>
+</head>
+<body>
+    <script>
+        let arr1=[1,23,3,21,3,90];
+        let arr2=[21,56,74,83];
+        let MergedArr=[];
+        for(let i=0;i<arr1.length;i++)
+    {
+        MergedArr[MergedArr.length]=arr1[i];
+    }
+    for(let j=0;j<arr2.length;j++)
+    {
+        MergedArr[MergedArr.length]=arr2[j];
+    }
+    document.write(MergedArr);
+    </script>
+    
+</body>
+</html>
