@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[15,28,-44,36,0,-2,88,74,58];
+        console.log("The Original array is::"+arr)
+        let result=[];
+        for(let i=0;i<arr.length;i++)
+        {
+            if(arr[i]<0)
+        {
+            result.push(arr[i]);
+        }
+        }
+        for(let i=0;i<arr.length;i++)
+        {
+            if(arr[i]>=0)
+        {
+            result.push(arr[i]);
+        }
+        }
+        console.log("After Modified array is::"+result);
+    </script>
+    
+</body>
+</html>
