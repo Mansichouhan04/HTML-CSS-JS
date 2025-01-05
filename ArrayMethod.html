@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Push methods returns length.
+        //pop methods returns  last delete elemnet.
+        //Unshift methods return length of the array.
+        //shift methods return remove length of the array.
+        //splice method return remaining element.
+        //slice method return duplicate array like shallow copy.
+
+
+
+
+
+        let arr1=[1,2,3,4,4];
+        console.log("The array is:"+arr1);
+        let a = arr.splice(2,1,63);
+        console.log("The modified array is:"+a)//return type of method
+
+        const arr = [1, 2, 3, 4, 5, 6, {"a": "mansi"}]
+        // let ret = arr.push("mansi");
+        // console.log(ret)
+        //console.log(arr)
+
+        // let y = arr.pop();
+        //console.log(arr)
+        // console.log(y)
+
+    //  let z = arr.unshift("Mansi");
+    //  console.log(z)
+    //  console.log(arr)
+
+
+// let arr3=[2,4,5,6,4,2];
+//  let m = arr.shift()
+//  console.log(m)
+//  console.log(arr3)
+
+ //let p = arr.splice(1,4,"Mansi","xyz",4546);
+ //console.log(arr)
+ //console.log(p)
+
+
+let x = arr.slice()
+x[0] = 5
+x[6].a = "xyz"
+console.log(x)   
+console.log(arr)
+    </script>
+</body>
+</html>
