@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Example</title>
+</head>
+<body>
+    <script>
+        // let firstPromise=new Promise((resolve,rejet)=>{
+        //     console.log("Mansi");
+        //    // resolve(1001);
+        //    reject(new Error("Internal server Error"));
+        // });
+        
+    //     let firstPromise=new Promise((resolve,rejet)=>{
+    //     setTimeout(function sayMyname()//Async code...
+    //     {
+    //         console.log("My name is Mansi chouhan");
+    //     },10000);//after 10 second it will be executed...
+    //     resolve(1);
+    // });
+
+    let promise1=new Promise((resolve,reject)=>{
+        let success=true;
+        if(success){
+            resolve("Promised Fullfilled");
+        }
+        else{
+            reject("Promise Rejected");
+        }
+    });
+
+    
+    // promise1.then((message) =>{
+    //     console.log("Then ka message is::"+message);
+    //     }).catch((error)=>{
+    //         console.log("Error:"+error);
+    //     })
+
+        
+    </script>
+    
+</body>
+</html>
