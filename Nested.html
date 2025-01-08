@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chaining</title>
+</head>
+<body>
+    <script>
+        const first = (x) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("1 is Executed " + x);
+                    resolve(x + 2);
+                }, 3000);
+            });
+        };
+
+        const second = (x) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("2 is Executed " + x);
+                    resolve(x + 2);
+                }, 2000);
+            });
+        };
+
+        const third = (x) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("3 is Executed " + x);
+                    resolve(x+2);
+                   // reject("error in third"); // Simulating a rejection
+                }, 3000);
+            });
+        };
+
+        const fourth = (x) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("4 is Executed " + x);
+                    resolve(x + 2);
+                }, 3000);
+            });
+        };
+
+        // Using Promise chaining
+        first(5)
+            .then(result => second(result))
+            .then(result => third(result))
+            .then(result => fourth(result))
+            .then(() => {
+                console.log("All tasks done");
+            })
+            .catch(error => {
+                console.log("Rejected: " + error);
+            });
+    </script>
+</body>
+</html>
