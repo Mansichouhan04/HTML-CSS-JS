@@ -6,15 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    </body>
     <script>
-        let s="this is an\"String\" ";//agar donble cotation me chaiye to aise hi likhege
-        let pr="The \'Sun\' rises in the east";//or single me ase bhi de skte h or niche jesa diya h wese bhi
-        let x="Good work-'Keep it up' ";
-        let e=document.createElement('p');
-        e.textContent=s
-       // e.textContent=s.concat(pr).concat(x);///concat method use
-       let p=document.getElementsByTagName('Body')[0];
-        p.appendChild(e);
+        let a=document.createElement("p");
+        a.textContent="This is a paragraph";
+
+        let b=document.getElementsByTagName("body")[0];
+        b.appendChild(a);
     </script>
-</body>
 </html>
