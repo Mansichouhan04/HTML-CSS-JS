@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Images</title>
+</head>
+<body>
+    <center>
+        <img id="main" src="indore.jpeg" width="350" height="350"/>
+        <br><br><br>
+        <img onclick="ChangeImage('first')" id="first" src="Rajwada.jpeg" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img onclick="ChangeImage('first')" id="Second" src="Gandhi-Hall-1.jpg" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img onclick="ChangeImage('first')" id="Third" src="1picnic spot.jpeg" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    </center>
+    <script>
+        function ChangeImage(currentImageId)
+        {
+            var mainImage=document.getElementById("main");
+            var currentImage=document.getElementById(currentImageId);
+
+            var temp=mainImage.src;
+            mainImage.src=currentImage.src;
+            currentImage.src=temp;
+        }
+    </script>
+    
+</body>
+</html>
