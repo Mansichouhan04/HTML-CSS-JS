@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <center>
+            <img id="main" src="indore.jpeg" width="350" height="350"/>
+            <br><br><br>
+            <img onclick="changeImage(this)" id="first" src="Rajwada.jpeg" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="changeImage(this)" id="second" src="1picnic spot.jpeg" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="changeImage(this)" id="third" src="Gandhi-Hall-1.jpg" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        </center>
+        <script> 
+            function changeImage(currentImage){
+               var mainImage = document.getElementById("main");
+             
+               var temp = mainImage.src;
+               mainImage.src = currentImage.src;
+               currentImage.src = temp;
+            }
+        </script>
+    </body>
+</html>
