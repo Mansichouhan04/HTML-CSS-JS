@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        f1();
+        function f1()//Function staement : It is hosited by default
+        {
+            document.write("<br>F1 executed...");
+        }
+
+        f2();
+        var f2=()=>//Expression is not hoisted
+        {
+         document.write("<br>f2 executed....");
+        }
+        //f2();
+
+        
+    </script>
+    
+</body>
+</html>
