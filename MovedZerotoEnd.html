@@ -1,0 +1,30 @@
+<!--Write a program to move all zeroes in the array to the end while maintaining the relative order of the non-zero elements.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moved zero to end</title>
+</head>
+<body>
+    <script>
+        function moveZeroesToEnd(arr) {
+        let nonZeroCount = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 0) {
+            arr[nonZeroCount] = arr[i];
+            if (nonZeroCount !== i) {
+                arr[i] = 0;
+            }
+            nonZeroCount++;
+        }
+    }
+
+    console.log(arr);
+}
+
+let arr = [0, 11, 2, 0, 35, 4, 0, 53];
+moveZeroesToEnd(arr); 
+ </script>
+</body>
+</html>
