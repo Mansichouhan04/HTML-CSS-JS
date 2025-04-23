@@ -1,0 +1,32 @@
+<!--Find the kth largest and kth smallest element in array-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kth Largest and Smallest</title>
+</head>
+<body>
+    <script>
+        function kth_Largest_Smallest(arr, k) {
+            for (let i = 0; i < arr.length - 1; i++) {
+                for (let j = i + 1; j < arr.length; j++) {
+                    if (arr[i] > arr[j]) {
+                        let temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+
+            let n = arr.length;
+            console.log("Kth Largest element: " + arr[n - k] + ", " +
+                        "Kth Smallest element: " + arr[k - 1]);
+        }
+
+        let arr = [1, 2, 6, 4, 5, 3];
+        let k = 3;
+        kth_Largest_Smallest(arr, k);
+    </script>
+</body>
+</html>
